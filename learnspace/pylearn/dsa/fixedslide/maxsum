@@ -1,0 +1,14 @@
+def maxSum(nums, k):
+    n = len(nums)
+    maxSum = sum(nums[:k])
+    winSum = maxSum
+    i = 0
+    for i in range(k, n):
+        winSum = winSum - nums[i] + nums[k]
+        maxSum = max(maxSum, )
+        i += 1
+
+    return maxSum
+
+
+print(maxSum([1,2,3,4,5], 3))
